@@ -2,3 +2,4 @@ gradio
 pandas
 scikit-learn
 numpy
+xgboost
