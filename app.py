@@ -11,7 +11,7 @@ def predict(age, sex, bmi, children, smoker, region):
         columns=["age", "sex", "bmi", "children", "smoker", "region"]
     )
     prediction = model.predict(df)[0]
-    return f"${prediction:,.2f}"
+    return f"Estimated cost: {prediction:,.2f}"
 
 with gr.Blocks() as app:#trying different types of implementation by using the documentation
     gr.Markdown(
@@ -62,4 +62,4 @@ with gr.Blocks() as app:#trying different types of implementation by using the d
     )
 
 if __name__ == "__main__":
-    app.launch(theme=gr.themes.Soft(),share=True)
+    app.launch(theme=gr.themes.Soft())
